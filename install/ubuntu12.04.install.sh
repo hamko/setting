@@ -79,7 +79,12 @@ sudo apt-get update && sudo apt-get install nautilus-dropbox
 #gnome-control-center
 # Keyboard Layout -> Ctrl Position -> Caps Lock as Ctrl
 
-
+####Dropbox
 #cd ~ && wget -O - "http://www.dropbox.com/download?plat=lnx.x86" | tar xzf -
 #~/.dropbox-dist/dropboxd
 
+####
+# Startup Application
+#/home/ryo/.dropbox-dist/dropboxd
+#/usr/bin/ibus-setup
+#/usr/bin/skype
