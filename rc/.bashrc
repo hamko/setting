@@ -106,46 +106,11 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# gits
-git config --global alias.co checkout
-git config --global alias.st 'status'
-git config --global alias.ci 'commit -a'
-git config --global alias.di 'diff'
-git config --global alias.br 'branch'
-git config --global alias.b 'branch'
-alias gco="git checkout"
-alias gst="git status"
-alias gci="git commit -a"
-alias gdi="git diff"
-alias gbr="git branch"
-export GIT_SSL_NO_VERIFY=1
-
-# Bash Command Line Edit mode
-set -o vi
-
-# reload bashrc
-alias bashrc="source ~/.bashrc"
-
-# Path
-PATH="$PATH:~/Dropbox/bin"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
-
-# mygcc
-alias myg++="g++ -I ~/Dropbox/include -I/usr/local/include/eigen3/ $1 -lm"
-
-# RoboTech
-alias mountpep="sudo mount ~/peppermint"
-
-# Python
-alias py="python"
-
-# remove backup
-alias rmbackup="find . -name '*~' -print0 | xargs -0 rm"
-
-# ROS
-source /opt/ros/groovy/setup.bash
-
 ## SDLOGGER-PARSER, PLOTTER
 source /opt/robotool/sdlogrc
 source /opt/robotool/plotterrc
 
+# ROS
+source /opt/ros/groovy/setup.bash
+
+source ~/github/setting/rc/.commonrc
