@@ -22,11 +22,11 @@ LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
 # mygcc
 alias myg++="g++ -I ~/Dropbox/include -I/usr/local/include/eigen3/ $1 -lm"
 
-# RoboTech
-alias mountpep="sudo mount ~/peppermint"
-
 # Python
 alias py="python"
 
 # remove backup
 alias rmbackup="find . -name '*~' -print0 | xargs -0 rm"
+
+# make skeloton_project
+alias newproject="cp -r ~/github/misc/skelton_project"
