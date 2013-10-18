@@ -16,11 +16,8 @@ export GIT_SSL_NO_VERIFY=1
 set -o vi
 
 # Path
-PATH="$PATH:~/Dropbox/bin"
+PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
-
-# mygcc
-alias myg++='g++ --std=c++11 `pkg-config opencv --cflags` -I ~/Dropbox/include -I/usr/local/include/eigen3/ $1 -lm `pkg-config opencv --libs`'
 
 # Python
 alias py="python"
