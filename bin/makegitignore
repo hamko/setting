@@ -1,0 +1,2 @@
+#defaultではMakefileはignoreしない
+cp ~/git/setting/bin/gitignore .gitignore

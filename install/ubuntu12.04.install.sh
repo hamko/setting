@@ -88,3 +88,7 @@ sudo apt-get update && sudo apt-get install nautilus-dropbox
 #/home/ryo/.dropbox-dist/dropboxd
 #/usr/bin/ibus-setup
 #/usr/bin/skype
+
+sudo add-apt-repository ppa:relan/exfat 
+sudo apt-get -y update
+sudo apt-get -y install fuse-exfat exfat-utils
