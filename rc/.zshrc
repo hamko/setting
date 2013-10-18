@@ -186,7 +186,3 @@ case "${TERM}" in
         }
         ;;
 esac
-
-
-# ROS
-source /opt/ros/groovy/setup.zsh
