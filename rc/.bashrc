@@ -105,12 +105,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-## SDLOGGER-PARSER, PLOTTER
-source /opt/robotool/sdlogrc
-source /opt/robotool/plotterrc
-
-# ROS
-source /opt/ros/groovy/setup.bash
-
-source ~/github/setting/rc/.commonrc
