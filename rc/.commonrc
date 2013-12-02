@@ -27,3 +27,6 @@ alias rmbackup="find . -name '*~' -print0 | xargs -0 rm"
 
 # make skeloton_project
 alias newproject="cp -r ~/github/misc/skelton_project"
+
+# dropbox
+alias dropboxd="~/.dropbox-dist/dropboxd"
