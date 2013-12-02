@@ -25,6 +25,10 @@ alias py="python"
 # remove backup
 alias rmbackup="find . -name '*~' -print0 | xargs -0 rm"
 
+# escape-shell
+#alias escape-shell="sed -e 's/ \|\[\|\]\|\*\|!/\\\0/g'"
+alias unzip-all="yes | find . -maxdepth 0 -type d -exec unzip {}/\*.zip -d manga/{} \;;find . -maxdepth 1 -name \*.zip -exec rm {} \;"
+
 # make skeloton_project
 alias newproject="cp -r ~/github/misc/skelton_project"
 
