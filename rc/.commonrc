@@ -37,3 +37,6 @@ alias dropboxd="~/.dropbox-dist/dropboxd"
 
 # last command
 alias lastcommand='history | tail -2 | awk "{for (i = 2; i < NF; i++) printf("%s", $i); print; exit}"'
+
+# make date dir
+alias mkdatedir='mkdir `date '+%Y%m%d'`'
