@@ -1,3 +1,7 @@
+# SL train defense
+alias sl=ls
+alias cd=dc
+
 # gits
 git config --global alias.co checkout
 git config --global alias.st 'status'
