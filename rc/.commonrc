@@ -34,3 +34,6 @@ alias newproject="cp -r ~/github/misc/skelton_project"
 
 # dropbox
 alias dropboxd="~/.dropbox-dist/dropboxd"
+
+# last command
+alias lastcommand='history | tail -2 | awk "{for (i = 2; i < NF; i++) printf("%s", $i); print; exit}"'
