@@ -1,14 +1,12 @@
 " カーソル位置を記憶する
 if has("autocmd")
 	" カーソル位置を記憶する
-	autocmd BufReadPost *
-				\ if line("'\"") > 0 && line("'\"") <= line("$") |
-				\   exe "normal g`\"" |
-				\ endif
+	autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g`\"" | endif
 endif
 
 set autoindent
 set background=dark
+let c_no_curly_error=1
 set backup
 set nocompatible
 set scrolloff=8
@@ -85,21 +83,16 @@ endif
 
 source $VIMRUNTIME/macros/matchit.vim
 
-" rails omni completion
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
-let g:rubycomplete_rails = 1
-
 " zsh autoload files
 autocmd BufRead,BufNewFile .zshfunc/* set filetype=zsh
 
 set fileencodings=utf-8,euc-jp,sjis
-
-" Lispの括弧を虹色にする
-let lisp_rainbow = 1
 
 " 編集モードで移動
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
+
+" 自動コメント無効
+autocmd FileType * setlocal formatoptions-=ro
