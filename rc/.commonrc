@@ -1,3 +1,15 @@
+# typo defense
+alias sl=ls
+alias dc=cd
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# bashrc
+alias bashrc='source ~/.bashrc'
+
 # gits
 git config --global alias.co checkout
 git config --global alias.st 'status'
@@ -25,5 +37,33 @@ alias py="python"
 # remove backup
 alias rmbackup="find . -name '*~' -print0 | xargs -0 rm"
 
+# escape-shell
+#alias escape-shell="sed -e 's/ \|\[\|\]\|\*\|!/\\\0/g'"
+alias unzip-all="yes | find . -maxdepth 0 -type d -exec unzip {}/\*.zip -d manga/{} \;;find . -maxdepth 1 -name \*.zip -exec rm {} \;"
+
 # make skeloton_project
 alias newproject="cp -r ~/github/misc/skelton_project"
+
+# dropbox
+alias dropboxd="~/.dropbox-dist/dropboxd"
+
+# last command
+alias lastcommand='history | tail -2 | awk "{for (i = 2; i < NF; i++) printf("%s", $i); print; exit}"'
+
+# make date dir
+alias mkdatedir='mkdir `date '+%Y%m%d'`'
+
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
+
+
