@@ -3,8 +3,8 @@ alias sl=ls
 alias dc=cd
 
 # screen
-alias sls = 'screen -ls'
-alias sr = 'screen -r'
+alias sls='screen -ls'
+alias sr='screen -r'
 
 # some more ls aliases
 alias ll='ls -alF'
