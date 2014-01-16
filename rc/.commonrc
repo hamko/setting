@@ -3,6 +3,7 @@ alias sl=ls
 alias dc=cd
 
 # screen
+alias scr='screen'
 alias sls='screen -ls'
 alias sr='screen -r'
 
