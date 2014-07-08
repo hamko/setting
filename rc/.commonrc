@@ -33,8 +33,9 @@ export GIT_SSL_NO_VERIFY=1
 set -o vi
 
 # Path
-PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
+export PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:~/Dropbox/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/lib/x86_64-linux-gnu
 
 # Python
 alias py="python"
@@ -71,4 +72,5 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-
+# natural scrolling
+xmodmap -e "pointer = 1 2 3 5 4" 2> /dev/null

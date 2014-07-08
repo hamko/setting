@@ -14,7 +14,8 @@ set showcmd
 set syntax=on
 set ts=4
 set expandtab
-set nowrap
+" set nowrap
+set wrap
 set hidden "未保存のまま別のファイルを開けるようにする
 filetype on
 filetype indent on
