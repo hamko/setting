@@ -35,6 +35,7 @@ set -o vi
 # Path
 PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
 LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
+GRASPIT="$GRASPIT:~/Graspit"
 
 # Python
 alias py="python"
