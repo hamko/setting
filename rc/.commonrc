@@ -1,3 +1,5 @@
+setxkbmap -option ctrl:swapcaps
+
 # typo defense
 alias sl=ls
 alias dc=cd
