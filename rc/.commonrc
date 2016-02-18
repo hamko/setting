@@ -1,4 +1,4 @@
-setxkbmap -option ctrl:swapcaps
+setxkbmap -option ctrl:nocaps
 
 # typo defense
 alias sl=ls
@@ -35,8 +35,8 @@ export GIT_SSL_NO_VERIFY=1
 set -o vi
 
 # Path
-PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
+PATH="$PATH:~/Dropbox/bin:~/git/setting/bin:/usr/local/cuda-7.5/bin"
+LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib:/usr/local/cuda-7.5/lib64"
 GRASPIT="$GRASPIT:~/Graspit"
 
 # Python
