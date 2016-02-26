@@ -1,3 +1,5 @@
+setxkbmap -option ctrl:nocaps
+
 # typo defense
 alias sl=ls
 alias dc=cd
@@ -49,6 +51,9 @@ alias vii='vi -c ":e ++enc=iso-2022-jp"'
 export PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:~/Dropbox/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/lib/x86_64-linux-gnu
+
+# GRASPIT
+export GRASPIT="$GRASPIT:~/Graspit"
 
 # Python
 alias py="python"
