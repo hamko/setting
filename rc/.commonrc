@@ -1,6 +1,11 @@
 # typo defense
 alias sl=ls
 alias dc=cd
+alias m=make
+alias mkae=make
+alias maek=make
+alias amke=make
+alias remake='make clean; make -j8'
 
 # screen
 alias scr='screen'
@@ -29,8 +34,16 @@ alias gdi="git diff"
 alias gbr="git branch"
 export GIT_SSL_NO_VERIFY=1
 
+# C++
+gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
+gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 150
+
+alias val="valgrind --num-callers=100 --leak-check=full --show-leak-kinds=all --leak-resolution=high --error-limit=no --workaround-gcc296-bugs=yes"
+
 # Bash Command Line Edit mode
 set -o vi
+
+alias vii='vi -c ":e ++enc=iso-2022-jp"'
 
 # Path
 export PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
@@ -74,3 +87,15 @@ fi
 
 # natural scrolling
 xmodmap -e "pointer = 1 2 3 5 4" 2> /dev/null
+# ISI 
+alias tunnelisi="ssh wakatabe@gw.isi.imi.i.u-tokyo.ac.jp -p 53310 -L 8080:is:80" # for at ISI else
+alias sshisi-internal="ssh wakatabe@is" # for at ISI
+alias sshshare6="ssh -Y wakatabe@share6" # for at ISI
+
+# Nas0
+alias sshnas0-internal="ssh ryo@nas0" # for at home
+alias sshnas0="ssh ryo@home.wakatabe.com" # for at home else
+
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/isi/lib
+LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/lib/octave-3.2.4
+PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/usr/local/lib/pkgconfig
