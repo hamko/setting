@@ -33,9 +33,9 @@ export GIT_SSL_NO_VERIFY=1
 set -o vi
 
 # Path
-PATH="$PATH:~/Dropbox/bin:~/git/setting/bin"
-LD_LIBRARY_PATH="$LD_LIBRARY_PATH:~/Dropbox/lib"
-GRASPIT="$GRASPIT:~/Graspit"
+export PATH="$PATH:/home/hamko/Dropbox/bin:/home/hamko/git/setting/bin"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/home/hamko/Dropbox/lib"
+export GRASPIT="/home/hamko/Graspit"
 
 # Python
 alias py="python"

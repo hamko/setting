@@ -12,14 +12,14 @@ set nocompatible
 set scrolloff=8
 set showcmd
 set syntax=on
-set ts=4
+set ts=2
 set expandtab
 set wrap
 set hidden "未保存のまま別のファイルを開けるようにする
 filetype on
 filetype indent on
 filetype plugin on
-set sw=4
+set sw=2
 syntax enable
 
 highlight LineNr ctermfg=darkyellow    " 行番号
