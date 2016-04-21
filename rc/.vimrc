@@ -9,13 +9,8 @@ set backup
 set nocompatible
 set scrolloff=8
 set showcmd
-<<<<<<< HEAD
 set syntax=on
-set ts=2
-=======
-"set syntax=on
-set ts=2 "tab
->>>>>>> 80c3637afd664f0da89566a9286e09cde6a6094c
+set ts=4
 set expandtab
 " set nowrap
 set wrap
@@ -23,13 +18,8 @@ set hidden
 filetype on
 filetype indent on
 filetype plugin on
-<<<<<<< HEAD
-set sw=2
+set sw=4
 syntax enable
-=======
-set sw=2 " tab 
-"syntax enable
->>>>>>> 80c3637afd664f0da89566a9286e09cde6a6094c
 
 highlight LineNr ctermfg=darkyellow
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
