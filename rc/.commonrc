@@ -9,6 +9,7 @@ alias maek=make
 alias amke=make
 alias ack=ack-grep
 alias remake='make clean; make -j8'
+alias xclip='xclip -selection clipboard'
 
 # screen
 alias scr='screen'
