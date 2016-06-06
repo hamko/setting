@@ -105,6 +105,3 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Key Repeat
-gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 13
-gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 300

@@ -1,4 +1,9 @@
 setxkbmap -option ctrl:nocaps
+# Key Repeat (for Ubuntu 12.04)
+#gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 13
+#gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 300
+# Key Repeat (for Ubuntu 14.04)
+xset r rate 230 100 # key-delay, key-repeat. key-repeatは大きいほど早い
 
 # typo defense
 alias sl=ls
@@ -100,9 +105,9 @@ alias sshisi-internal="ssh wakatabe@is" # for at ISI
 alias sshshare6="ssh -Y wakatabe@share6" # for at ISI
 
 # ROS
-. /home/hamko/allegro/devel/setup.bash
-. /home/hamko/catkin_ws/devel/setup.bash
-. /opt/ros/indigo/setup.bash
+#. /home/hamko/allegro/devel/setup.bash
+#. /home/hamko/catkin_ws/devel/setup.bash
+/opt/ros/indigo/setup.bash
 
 # Nas0
 alias sshnas0-internal="ssh ryo@nas0" # for at home
@@ -111,3 +116,4 @@ alias sshnas0="ssh ryo@home.wakatabe.com" # for at home else
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/isi/lib
 LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/lib/octave-3.2.4
 PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/usr/local/lib/pkgconfig
+
