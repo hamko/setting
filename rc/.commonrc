@@ -5,7 +5,7 @@ setxkbmap -option ctrl:nocaps
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 13
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 300
 # Key Repeat (for Ubuntu 14.04)
-xset r rate 230 100 # key-delay, key-repeat. key-repeatは大きいほど早い
+xset r rate 230 50 # key-delay, key-repeat. key-repeatは大きいほど早い
 
 # typo defense
 alias sl=ls
@@ -46,8 +46,8 @@ alias gbr="git branch"
 export GIT_SSL_NO_VERIFY=1
 
 # C++
-gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
-gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 150
+#gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
+#gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 150
 
 alias val="valgrind --num-callers=100 --leak-check=full --show-leak-kinds=all --leak-resolution=high --error-limit=no --workaround-gcc296-bugs=yes"
 
