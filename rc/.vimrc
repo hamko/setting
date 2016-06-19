@@ -21,6 +21,10 @@ filetype plugin on
 set sw=4
 syntax enable
 
+"" texのconcealを無効化(ブチギレ)
+let g:tex_conceal=''
+set ambiwidth=double
+
 highlight LineNr ctermfg=darkyellow
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 if &encoding !=# 'utf-8'

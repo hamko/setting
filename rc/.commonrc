@@ -45,6 +45,10 @@ alias gdi="git diff"
 alias gbr="git branch"
 export GIT_SSL_NO_VERIFY=1
 
+# Mozc
+alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
+alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
+
 # C++
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 150
@@ -107,9 +111,10 @@ alias sshisi-internal="ssh wakatabe@is" # for at ISI
 alias sshshare6="ssh -Y wakatabe@share6" # for at ISI
 
 # ROS
+. /opt/ros/indigo/setup.sh
+. /home/hamko/allegro_ws/devel/setup.sh
 #. /home/hamko/allegro/devel/setup.bash
 #. /home/hamko/catkin_ws/devel/setup.bash
-. /opt/ros/indigo/setup.bash
 
 # Nas0
 alias sshnas0-internal="ssh ryo@nas0" # for at home
