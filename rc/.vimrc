@@ -25,6 +25,8 @@ syntax enable
 let g:tex_conceal=''
 set ambiwidth=double
 
+set undofile
+
 highlight LineNr ctermfg=darkyellow
 highlight ZenkakuSpace cterm=underline ctermfg=lightblue guibg=white
 if &encoding !=# 'utf-8'
