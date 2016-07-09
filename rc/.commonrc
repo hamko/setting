@@ -50,6 +50,9 @@ export GIT_SSL_NO_VERIFY=1
 alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
 alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
 
+# icc
+source /opt/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
+
 # C++
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 150
