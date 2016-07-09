@@ -19,7 +19,7 @@ alias ack=ack-grep
 alias remake='make clean; make -j8'
 alias xclip='xclip -selection clipboard'
 alias g++='g++ -std=c++11 -g -Wall' # -ftrapvはg++6.1とかじゃないと動かないっぽい
-alias clang++='clang++ -std=c++11 -g -Wall  -fsanitize=undefined'
+alias clang++='clang++-3.5 -std=c++11 -g -Wall  -fsanitize=undefined'
 
 # screen
 alias scr='screen'
