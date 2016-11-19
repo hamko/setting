@@ -18,8 +18,11 @@ alias amke=make
 alias ack=ack-grep
 alias remake='make clean; make -j8'
 alias xclip='xclip -selection clipboard'
-alias g++='g++ -std=c++11 -g -Wall -Wno-sign-compare' # -ftrapvはg++6.1とかじゃないと動かないっぽい
-alias clang++='clang++ -std=c++11 -g -Wall  -fsanitize=undefined'
+#alias g++='g++ -std=c++11 -g -Wall -Wno-sign-compare' # -ftrapvはg++6.1とかじゃないと動かないっぽい
+#alias clang++='clang++ -std=c++11 -g -Wall  -fsanitize=undefined'
+#alias g++='g++ -std=c++11 -g -Wall' # -ftrapvはg++6.1とかじゃないと動かないっぽい
+alias g++='clang++-3.5 -std=c++11 -g -Wall  -fsanitize=undefined -Wno-deprecated'
+alias clang++='clang++-3.5 -std=c++11 -g -Wall  -fsanitize=undefined'
 
 # screen
 alias scr='screen'
@@ -51,6 +54,9 @@ export GIT_SSL_NO_VERIFY=1
 # Mozc
 alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
 alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
+
+# icc
+source /opt/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
 
 # C++
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
