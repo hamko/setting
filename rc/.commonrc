@@ -1,7 +1,6 @@
 LANG=C xdg-user-dirs-gtk-update
 
 setxkbmap -option ctrl:nocaps
-xmodmap  ~/.Xmodmap 
 # Key Repeat (for Ubuntu 12.04)
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 13
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard delay 300
@@ -56,7 +55,7 @@ alias mozc-config="/usr/lib/mozc/mozc_tool -mode=config_dialog"
 alias mozc-dict="/usr/lib/mozc/mozc_tool --mode=dictionary_tool"
 
 # icc
-source /opt/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
+#source /opt/intel/compilers_and_libraries_2016/linux/bin/compilervars.sh intel64
 
 # C++
 #gsettings set org.gnome.settings-daemon.peripherals.keyboard repeat-interval 15
@@ -120,8 +119,8 @@ alias sshisi-internal="ssh wakatabe@is" # for at ISI
 alias sshshare6="ssh -Y wakatabe@share6" # for at ISI
 
 # ROS
-. /opt/ros/indigo/setup.sh
-. /home/hamko/allegro_ws/devel/setup.sh
+#. /opt/ros/indigo/setup.sh
+#. /home/hamko/allegro_ws/devel/setup.sh
 #. /home/hamko/allegro/devel/setup.bash
 #. /home/hamko/catkin_ws/devel/setup.bash
 
