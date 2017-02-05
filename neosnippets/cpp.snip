@@ -63,7 +63,7 @@ abbr        rep(,) {}
 # lambda expression ( C++11 feature )
 snippet     lambda
 abbr        [](){}
-    [${1}](${2})${3}{ ${4:TARGET} }${0:;}
+    [&](${2}){ ${4:TARGET} }${0:;}
 
 # scoped enumeration ( C++11 feature )
 snippet     enum_scoped
