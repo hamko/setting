@@ -1,6 +1,8 @@
 cd ~
 mkdir nas0
 sshfs ryo@home.wakatabe.com:/ ~/nas0
+mkdir nas
+sshfs hamko@192.168.0.3:/homes/hamko ~/nas
 mkdir logfiles
 sshfs wakatabe@ds13fs:/home/storage1/sagisaka/logfiles ~/logfiles
 mkdir wakatabe
