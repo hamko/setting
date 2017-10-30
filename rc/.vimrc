@@ -94,68 +94,24 @@ autocmd FileType * setlocal formatoptions-=ro
 
 
 
-"---------------------------
-" Start Neobundle Settings.
-"---------------------------
+
+
+
 " bundleで管理するディレクトリを指定
 set runtimepath+=~/.vim/bundle/neobundle.vim/
- 
-" Required:
+
 call neobundle#begin(expand('~/.vim/bundle/'))
- 
-" neobundle自体をneobundleで管理
+
 NeoBundleFetch 'Shougo/neobundle.vim'
- 
-" 今後このあたりに追加のプラグインをどんどん書いて行きます！！"
-" NERDTreeを設定
-NeoBundle 'scrooloose/nerdtree'
 
-
-
-NeoBundle 'Shougo/neocomplete.vim'
-" neocomplete用設定
-let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_ignore_case = 1
-let g:neocomplete#enable_smart_case = 1
-if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns._ = '\h\w*'
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
-
-
-NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neocomplcache'
 NeoBundle 'Shougo/neosnippet'
-" Plugin key-mappings.
-imap <C-k>     <Plug>(neosnippet_expand_or_jump)
-smap <C-k>     <Plug>(neosnippet_expand_or_jump)
-xmap <C-k>     <Plug>(neosnippet_expand_target)
- 
-" SuperTab like snippets behavior.
-imap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: pumvisible() ? "\<C-n>" : "\<TAB>"
-smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-\ "\<Plug>(neosnippet_expand_or_jump)"
-\: "\<TAB>"
+NeoBundle 'Shougo/neosnippet-snippets'
 
-" For snippet_complete marker.
-if has('conceal')
-  set conceallevel=2 concealcursor=i
-endif
-
- 
+" python auto completion and static analysis
+NeoBundle 'davidhalter/jedi-vim'
 call neobundle#end()
- 
-" Required:
-filetype plugin indent on
- 
-" 未インストールのプラグインがある場合、インストールするかどうかを尋ねてくれるようにする設定
-" 毎回聞かれると邪魔な場合もあるので、この設定は任意です。
-NeoBundleCheck
+"NeoBundleInstall
 
- 
-"-------------------------
-" End Neobundle Settings.
-"-------------------------
+filetype plugin indent on
+autocmd FileType python setlocal completeopt-=preview
