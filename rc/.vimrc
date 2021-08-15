@@ -97,21 +97,4 @@ autocmd FileType * setlocal formatoptions-=ro
 
 
 
-" bundleで管理するディレクトリを指定
-set runtimepath+=~/.vim/bundle/neobundle.vim/
 
-call neobundle#begin(expand('~/.vim/bundle/'))
-
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'Shougo/neocomplcache'
-NeoBundle 'Shougo/neosnippet'
-NeoBundle 'Shougo/neosnippet-snippets'
-
-" python auto completion and static analysis
-NeoBundle 'davidhalter/jedi-vim'
-call neobundle#end()
-"NeoBundleInstall
-
-filetype plugin indent on
-autocmd FileType python setlocal completeopt-=preview
