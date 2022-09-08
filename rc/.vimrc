@@ -92,11 +92,4 @@ inoremap <C-l> <Right>
 
 autocmd FileType * setlocal formatoptions-=ro
 
-filetype plugin indent on
-autocmd FileType python setlocal completeopt-=preview
 
-augroup HighlightTrailingSpaces
-  autocmd!
-  autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
-  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
-augroup END
