@@ -14,3 +14,4 @@ sshfs wakatabe@is:/home/isi ~/is
 mkdir fs3
 sshfs wakatabe@is:/export2012/data3/home2016/wakatabe ~/fs3
 cd -
+google-drive-ocamlfuse ~/googledrive
