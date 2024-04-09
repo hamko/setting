@@ -4,7 +4,6 @@ endif
 
 set autoindent
 set background=dark
-let c_no_curly_error=1
 set backup
 set nocompatible
 set scrolloff=8
@@ -19,10 +18,8 @@ filetype on
 filetype indent on
 filetype plugin on
 set sw=4
-syntax enable
 
 "" texのconcealを無効化(ブチギレ)
-let g:tex_conceal=''
 set ambiwidth=double
 
 set undofile
@@ -77,8 +74,6 @@ set fileformats=unix,dos,mac
 if exists('&ambiwidth')
 	set ambiwidth=double
 endif
-
-source $VIMRUNTIME/macros/matchit.vim
 
 " zsh autoload files
 autocmd BufRead,BufNewFile .zshfunc/* set filetype=zsh
