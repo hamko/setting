@@ -1,4 +1,0 @@
-mencoder $1 -oac mp3lame -ovc lavc -lavcopts vcodec=mpeg4 -o $2
-echo "####"
-echo "usage: ogvmp4 input.ogv out.mp4"
-echo "####"

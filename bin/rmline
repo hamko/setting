@@ -1,3 +1,0 @@
-#!/bin/sh
-
-echo -e "$1d\\nw" | ed - $2
