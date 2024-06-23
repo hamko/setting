@@ -1,0 +1,3 @@
+SCRIPT_DIR=$(cd $(dirname $0); pwd)
+python3 $SCRIPT_DIR/say.py "$1"
+rm output.mp3
