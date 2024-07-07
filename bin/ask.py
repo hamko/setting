@@ -5,9 +5,9 @@ import argparse
 parser = argparse.ArgumentParser(description='Answer a question.')
 parser.add_argument('prompt', metavar='prompt', help='A prompt to ask')
 parser.add_argument('--model', dest='model', action='store',
-                    default='gpt-3.5-turbo',
+                    default='gpt-4o',
                     choices=['gpt-4o', 'gpt-4', 'gpt-3.5-turbo'],
-                    help='The model to use. gpt-3.5-turbo, gpt-4o, gpt-4 (default: gpt-3.5-turbo)')
+                    help='The model to use. gpt-3.5-turbo, gpt-4o, gpt-4 (default: gpt-4o)')
 
 args = parser.parse_args()
 
